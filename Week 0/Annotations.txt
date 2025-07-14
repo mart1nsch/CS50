@@ -1,0 +1,7 @@
+* Scratch
+    - Bit: Binary Digit
+    - Transistors store information, their're off with 0 and on with 1
+    - Letter A as a byte: 01000001, so it's 65, this is ASCII
+    - ASCII isn't used anymore, Unicode it's the new character format and it can hold up to 4 million different characters
+    - With RGB we represent colors
+    - Algorithm: Step by step to solve a problem or a task, it has to be precise
