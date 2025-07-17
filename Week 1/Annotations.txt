@@ -1,0 +1,22 @@
+* C
+    - Create a file at VS Code: code hello.c
+    - Compile your code: make hello
+    - Run your file: ./hello
+    - Print a think in the console: printf("");
+    - Ever file that ends with a .h is a header file, it cames with the language it self, basically a pre installed library
+    - You can include libraries with the #include
+    - To use printf, you need to include the stdio.h library
+    - I can see the documentation of libraies in this link https://manual.cs50.io/
+    - Use the cs50.h library to get user information using get_char, get_double, get_float, get_int, get_string, ...
+    - To display a printf with a variable, we use %s\n: printf("Hello, %s\n", answer); It displays like this Hello, Martin
+    - If you want to print a integer variable with a text, we don't use %s\n, we use %i\n, because the type it's int and not string
+    - Variables in C need to have the type with their name, like: string answer
+
+* Shortcuts for Terminal
+    - ls: list all of the files
+    - cd: open a foulder
+    - cp: copy a file
+    - mkdir: make a new folder or directory
+    - mv: move a folder to another place or rename the file name
+    - rm: remove
+    - rmdir: remove directory
