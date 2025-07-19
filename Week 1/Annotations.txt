@@ -11,6 +11,13 @@
     - To display a printf with a variable, we use %s\n: printf("Hello, %s\n", answer); It displays like this Hello, Martin
     - If you want to print a integer variable with a text, we don't use %s\n, we use %i\n, because the type it's int and not string
     - Variables in C need to have the type with their name, like: string answer
+    - We use for and while for loops
+    - Create functions with void: void meow(void) {}
+    - Functions need to be declared before they`re called, but we can use prototypes to don`t need to create our function at the top
+    - To use a prototype, we just call this at the top, with our function name and parameters: void meow(void);
+    - We use the word const to set a variable to constant: const int n = 1;
+    - Casting a type for a thing: float i = (float) x / y;
+    - Floating point impresicion it`s a problem with impresicion with numbers who have longs digits after the , like 0,333333333333
 
 * Shortcuts for Terminal
     - ls: list all of the files
