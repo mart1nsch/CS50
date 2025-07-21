@@ -1,0 +1,19 @@
+* Compaling C
+    - The command "make" that i used to convert the source code to machine code with the cs50.dev it's acctuali this:
+        + It runs a compiler called clang;
+        + When you only call "clang hello.c", you get a file named a.out, that is your program compiled, so, if you call ./a.out, it runs normally;
+        + You can use arguments with clang:
+            # -o: you can name your output file: clang -o hello hello.c
+            # -lcs50: if you use the cs50 library, you need to use this: clang -o hello hello.c -lcs50
+        + When you compile, it makes this:
+            # preprocessing: it takes the #include and take the code from the library that you used in your code
+            # compiling: it translate C to assembly
+            # assembling: converts assembly to binary
+            # linking: it links all of the files of your code, including the #include files
+
+* Debugging C
+    - Use debug50 for debug in the cs50 course: debug50 ./hello
+    - You need to set breakpoints in the code
+
+* Array
+    - You need to declare the type of the array, the name and the size of it, just like Java: int scores[3];
