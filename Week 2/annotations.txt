@@ -17,3 +17,18 @@
 
 * Array
     - You need to declare the type of the array, the name and the size of it, just like Java: int scores[3];
+
+* Strings
+    - Strings work the same as an array, so, you can use indexes on a string: name[0]; it return a char
+    - Strings in C doesn't have end, so, if you try to go to a index that doesn't exists, it returns a garbage number, and didn't return a error
+    - String library to use with C: string.h
+    - I can use the library ctype.h to uppercase the string
+
+* For loop
+    - You can declare more variables in the for loop:
+        + for (int i=0, n=strlen(s); i<n; i++) {}
+
+* The main function
+    - It can recive two arguments, the first a int that represents the count of the arguments given by the user, and the second one, a array of Strings
+      that is the arguments:
+        + int main(int argc, string argv[]) {}
