@@ -1,0 +1,18 @@
+* Algorithms
+    - O(n) = Linear Search
+    - O(log n) = Binary Search
+
+* Strings
+    - We don't use == to compare strings
+    - We will use the string.h library and the strcmp function to compare them
+    - We can use it to do a binary search, because it returns a number as result of the comparision
+
+* Data Structures
+    - And object
+    - The code is like that:
+        + typedef struct
+          {
+              string name;
+              string number;
+          }
+          person;
