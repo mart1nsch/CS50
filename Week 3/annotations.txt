@@ -16,3 +16,30 @@
               string number;
           }
           person;
+
+* Recursion
+    - Recursion is better than bouble sort and selection sort
+    - We need to use our recursive function in a way that we first resolve the last numbers, exemple:
+        + Here is a function that prints a pyramid starting to the top to bottom:
+            # void draw(int height)
+              {
+                  if (height <= 0)
+                  {
+                      return;
+                  }
+  
+                  draw(height - 1);
+  
+                  for (int i=0; i<height; i++)
+                  {
+                      printf("#");
+                  }
+                  printf("\n");
+              }
+        + It starts with, exemple, height 4 when it is called, and than it calls it back with draw(height - 1) until height is 1, and than starts printing
+
+* Merge sort
+    - It's the better sorting algorithm
+    - It use recursion
+    - We use recursion to sort every middle piece in littles pieces
+    - It's like a tree
