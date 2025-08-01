@@ -1,0 +1,2 @@
+* Hexadecimal
+    - When it's a hexadecimal bit, we use 0x in the front of the number of that bite tu understand that it's hexadecimal, like 0x10
