@@ -1,2 +1,38 @@
 * Hexadecimal
     - When it's a hexadecimal bit, we use 0x in the front of the number of that bite tu understand that it's hexadecimal, like 0x10
+
+* Pointers
+    - With C, we can get the addresses that a variable is stored in the computer
+    - With the address, we can get the value of the address and play around with the pointer it-self
+
+* Strings
+    - A string actually stores the address of the first character on the memory of that string
+    - With the firts address, it can print all of the string making a while loop until the logic found the NUL character, AKA \0
+    - In C, if we whant to use a string, we don't use the string type, we declare a type like this:
+        + typedef char * string;
+        + And after that, we know the address for the first character of the string
+        + With the first character, we can loop until we found the NUL character in a position, that way, we can print all of the string;
+    - To make a string without the cs50 library, we can use this:
+        + #include <stdio.h>
+          
+          int main(void)
+          {
+              typedef char * string;
+
+              string test = "Teste";
+
+              printf("%s\n", test);
+
+              printf("%c\n", test[2]);
+          }
+    - Or we can use like this:
+        + #include <stdio.h>
+          
+          int main(void)
+          {
+              char *test = "Teste";
+
+              printf("%s\n", test);
+
+              printf("%c\n", test[2]);
+          }
