@@ -17,7 +17,7 @@
           
           int main(void)
           {
-              typedef char * string;
+              typedef char *string;
 
               string test = "Teste";
 
@@ -35,4 +35,33 @@
               printf("%s\n", test);
 
               printf("%c\n", test[2]);
+          }
+    - Because of it, we never can use == to compare strings, because you is going to compare two addresses, and not the actually string
+    - When you try to copy a string using char *t = s, it won't work, because you are actually coping the address and not the string
+
+* Malloc
+    - Malloc is a function that allocate memory for us
+    - It goes to the computer and asks for memory
+    - We can store it in a variable, for exemple, to copy a string
+    - After we use the memory and don't need it anymore, we need to handle back to the computer that memory, so we don't have memory leeks, using free()
+    - A exemplo of use:
+        + #include <cs50.h>
+          #include <stdio.h>
+          #include <stdlib.h>
+          #include <string.h>
+  
+          int main(void)
+          {
+              char *s = get_string("s: ");
+  
+              char *t = malloc(strlen(s) + 1);
+  
+              if (t == NULL)
+              {
+                  return 1;
+              }
+  
+              strcpy(t, s);
+  
+              free(t);
           }
