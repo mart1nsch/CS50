@@ -65,3 +65,62 @@
   
               free(t);
           }
+
+* Scanf
+    - Scanf is used to recieve a value from the user
+    - To get a int value from the user, we can use this:
+        + #include <stdio.h>
+          
+          int main(void)
+          {
+              int n;
+              printf("n: ");
+              scanf("%i", &n);
+              printf("n: %i\n", n);
+          }
+    - The first argument is the type of value we want, and the second argument is the pointer of variable that will recieve the value from the user
+
+* Files
+    - We can manage files with some functions already in C, like, fopen, fprintf, fclose, fwrite, etc.
+    - To open a file and write in it, we can use this:
+        + #include <cs50.h>
+          #include <stdio.h>
+          #include <string.h>
+  
+          int main(void)
+          {
+              FILE *file = fopen("file.txt", "a");
+
+              if (file == NULL)
+              {
+                  return 1;
+              }
+  
+              char *name = get_string("Name: ");
+              char *number = get_string("Number: ");
+  
+              fprintf(file, "%s,%s\n", name, number);
+  
+              fclose(file);
+          }
+    - To copy a file bit by bit, we can to this:
+        + #include <stdio.h>
+          #include <stdint.h>
+
+          typedef uint8_t BYTE;
+  
+          int main(int argc, char *argv[])
+          {
+              FILE *src = fopen("argv[1]", "rb");
+              FILE *dst = fopen("argv[2]", "wb");
+
+              BYTE b;
+  
+              while (fread(&b, sizeof(b), 1, src) != 0)
+              {
+                  fwrite(&b, sizeof(b), 1, dst);
+              }
+  
+              fclose(dst);
+              fclose(src);
+          }
